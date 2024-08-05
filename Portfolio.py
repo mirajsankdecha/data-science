@@ -28,3 +28,9 @@ dsfdsf"""
 # print(type(my_bool)) 
 # print(type(None)) 
 
+# Assigning Values to Variables
+
+# a,b,c = 10,20,30
+# print(a+b+c)
+# a = b = c = 100
+# print(a+b+c)
