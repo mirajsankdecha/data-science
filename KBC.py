@@ -14,7 +14,7 @@ q3 = "Is Python case sensitive when dealing with identifiers?"
 q3o1 = "no"
 q3o2 = "yes"
 q3o3 = "machine dependent"
-q3o4 = "none of the mentioned   "
+q3o4 = "none of the mentioned"
 
 q4 = "Which of the following is the correct extension of the Python file?"
 q4o1 = ".python"
