@@ -7,6 +7,8 @@ if a >= 18 :
 else :
     print("Sorry, you are not Eligible for Voting")
 
+# Age Category Program in Python
+
 age = int(input("Enter your Age : ")) 
 
 if age >= 13 and age <= 19 : 
@@ -18,5 +20,5 @@ elif age >= 5 and age <= 12 :
 elif age >= 20 and age <= 39 :
     print("You are Adult")          
 else :
-    print("You are Older") 
+    print("You are Elder") 
 
