@@ -18,3 +18,10 @@ print("Division of Two Numbers :",div)
 print("Floor Division of Two Numbers :",f_div)
 print("Modulus of Two Numbers :",mod)
 print("Exponential of Two Numbers :",exp)
+
+# Relational Operators in python
+
+# Logical Operator in python 
+
+# Membership Operator in python 
+
