@@ -1,6 +1,12 @@
-# Pratice Of For Loop Pattern
+# Pratice Of Asterisk Using For Loop Pattern 
 
-for i in range(1,7,1) :
-    for j in range(1,i,1) :
-        print("*",end="")
-    print()    
+# Simple
+for i in range(1,6,1) :
+    for j in range(1,i+1) :
+        print("* ",end="")
+    print()
+# Reverse
+for i in range(5,0,-1) :
+    for j in range(i) :
+        print("* ",end="")
+    print()     
