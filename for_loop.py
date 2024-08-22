@@ -10,6 +10,9 @@ for i in range(5,0,-1) :
     for j in range(i) :
         print("* ",end="")
     print()     
+# Reverse Short Program
+for i in range(5,0,-1) :
+    print("* " * i)
 # Range Increment
 for i in range(1,10,4) :
     print("* \n")
