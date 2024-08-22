@@ -26,3 +26,5 @@ for i in range(1,6) :
     for j in range(1,6):
         print("* ", end=" ")
     print()       
+
+# Create Tringle and Diamond and also create empty in between and border is same as Tringle and Diamond    
