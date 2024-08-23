@@ -15,5 +15,11 @@ print(name[-1]) # Print "J"
 print(name[0:5]) # Print "Miraj"
 print(name[:]) # Print "Miraj Sankdecha"
 
+print(name.lower())
+print(name.upper())
+print(name.title()) # 
+print(name.find("Miraj"))
+print(name.split(" "))
+
 
 
