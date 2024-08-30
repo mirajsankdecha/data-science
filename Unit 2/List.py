@@ -7,7 +7,7 @@ print(type(student))  # This will tell us the type of the variable
 print(student.reverse())  # This will reverse the list
 print(student.sort())  # This will sort the list in ascending order
 print(student.sort(reverse=True))  # This will sort the list in descending order
-print(student.index("Miraj"))  # This will give us the index of 'Miraj' in the list
+# print(student.index("Miraj"))  # This will give us the index of 'Miraj' in the list
 print(student[0])  # This will give us the first element in the list
 
 nm = "Miraj"
@@ -36,3 +36,18 @@ new_list = []
 for i in student_marks:
     new_list.append(i**2)  # This will append the square of each element to the new list
 print(new_list)  # This will print the new list
+
+new_list2 = [i**2 for i in student_marks]  # This is a more concise way of doing the same thing
+print(new_list2)  # This will print the new list
+
+# Hetereogeneous List
+
+student_info = ["Miraj", True, 10, 20.5, [10, 20, 30]]
+print(student_info)  # This will print the list of student
+
+# 2D List
+
+student_marks = [[10, 20, 30], [40, 50, 60], [70, 80, 90]]
+print(student_marks)  # This will print the 2D list
+print(student_marks[1])  # This will print the second row
+print(student_marks[1][2])  # This will print the third element of the second row
