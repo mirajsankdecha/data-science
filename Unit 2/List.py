@@ -17,5 +17,9 @@ print(student)
 student_marks.append(55) # This will add 55 to the end of the list
 print(student_marks)
 
-# %whos
+nm = "Miraj" 
+print("_" + nm[:2] +  "_" + nm[2:5]   )   # This will print 'Mi_raj'
+
+nm = " Mir aj"
+print(nm.replace(" ","")) # This will remove all spaces from the string
 
