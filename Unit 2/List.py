@@ -51,3 +51,19 @@ student_marks = [[10, 20, 30], [40, 50, 60], [70, 80, 90]]
 print(student_marks)  # This will print the 2D list
 print(student_marks[1])  # This will print the second row
 print(student_marks[1][2])  # This will print the third element of the second row
+print(student_marks[:]) # This will print the entire list
+print(student_marks[1:3])  # This will print the second and third element of the second row
+print(student_marks[1][0:2])  # This will print the first two elements of the second row 
+print(student_marks[0:3:2]) # This will print the first and third row of the list 
+
+matrix_list = [[1,2,3], [4,5,6], [7,8,9]]
+matrix_list [0] [0] = 10
+matrix_list [1] [1] = 20
+matrix_list [2] [2] = 30
+print(matrix_list)  # This will print the list
+
+for row in matrix_list:
+    for element in row:
+        print(element, end=" ")
+    print() # This will print the matrix in a 3x3 format
+
