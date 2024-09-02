@@ -60,6 +60,7 @@ matrix_list = [[1,2,3], [4,5,6], [7,8,9]]
 matrix_list [0] [0] = 10
 matrix_list [1] [1] = 20
 matrix_list [2] [2] = 30
+
 print(matrix_list)  # This will print the list
 
 for row in matrix_list:
