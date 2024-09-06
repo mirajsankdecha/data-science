@@ -68,3 +68,14 @@ for row in matrix_list:
         print(element, end=" ")
     print() # This will print the matrix in a 3x3 format
 
+# Practice Questions
+n = 0 
+stumark = [20,30,25,21,27,19,15,12,8,22,21]
+for i in stumark:
+    n+=i
+print(n)  # This will print the sum of all the elements in the list
+maxnum = stumark[0]
+for num in stumark:
+    if num > maxnum:
+        maxnum = num
+print(maxnum)  # This will print the maximum number in the list        
