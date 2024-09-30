@@ -1,0 +1,1 @@
+# Design and implement a fully digital hopital management system using python yto simple the mangement of 10 patients and 5 doctor across 5 department : OPD , .
