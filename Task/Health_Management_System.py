@@ -70,4 +70,10 @@ while True:
         if patient_id in Health_Management_System:
             print(f"ID: {patient_id}, Details: {Health_Management_System[patient_id]}")
         else:
-            print("Patient not found.")        
+            print("Patient not found.")
+    
+    elif choice == "4":
+        department = input("Enter The Deaprtment:")
+        for patient_id, details in Health_Management_System.items():
+            if details['Department'] == department:
+                print(f"ID : {patient_id}, Name: {details['Name']} , Age : {details['Age']} , Symptoms : {details['Symptoms']}")                    
