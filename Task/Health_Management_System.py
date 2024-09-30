@@ -61,10 +61,13 @@ while True:
         Health_Management_System[patient_id] = {"Name": name, "Department": department, "Age": age, "Symptoms": symptoms}
         
         print("Patient Added Successfully!")
-        
     elif choice == "2":
         for patient_id, details in Health_Management_System.items():
             print(f"ID: {patient_id}, Name: {details['Name']}, Department: {details['Department']}, Age: {details['Age']}, Symptoms: {details['Symptoms']}")    
             
-        
-        
+    elif choice == "3":
+        patient_id = input("Enter Patient ID to search: ")
+        if patient_id in Health_Management_System:
+            print(f"ID: {patient_id}, Details: {Health_Management_System[patient_id]}")
+        else:
+            print("Patient not found.")        
