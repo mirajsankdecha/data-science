@@ -76,4 +76,37 @@ while True:
         department = input("Enter The Deaprtment:")
         for patient_id, details in Health_Management_System.items():
             if details['Department'] == department:
-                print(f"ID : {patient_id}, Name: {details['Name']} , Age : {details['Age']} , Symptoms : {details['Symptoms']}")                    
+                print(f"ID : {patient_id}, Name: {details['Name']} , Age : {details['Age']} , Symptoms : {details['Symptoms']}")  
+    
+    elif choice == "5":
+        patient_id = input("Enter Patient ID to update:")
+        if patient_id in Health_Management_System:
+            print("What to update? (Name/Department/Age/Symptoms)")
+            field = input("Enter field:") 
+            if field in Health_Management_System[patient_id]:
+                new_value = input(f"Enter new {field}:")                         
+                Health_Management_System[patient_id][field] = new_value
+                print(f"{field.capitalize()} updated.")
+            else:
+                print("Invalid field.")
+                
+    elif choice == "6":
+        patient_id = input("Enter Patient ID to delete:")
+        if patient_id in Health_Management_System:
+            del Health_Management_System[patient_id]
+            print("Patient Deleted Successfully!")
+        else:
+            print("Patient not found.")
+    
+    elif choice == "7":
+        patient_id = input("Enter Patient ID to check:")
+        if patient_id in Health_Management_System:
+            print("Patient ID Exists.")
+        else:
+            print("Patient ID does not exist.")
+                
+    elif choice == "8":
+        copy = Health_Management_System.copy()
+        print("Patient Dictionary Copied Successfully!")
+        print(copy) 
+                
