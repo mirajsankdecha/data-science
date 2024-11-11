@@ -44,18 +44,42 @@
 #     print("*" * i)
 #     i+=1
 
-# Guessing Game 
-import random 
-import math
-sn = math.floor(random.random() * 10) + 1
-count = 0 
-chances = 3
+# # Guessing Game 
+# import random 
+# import math
+# sn = math.floor(random.random() * 10) + 1
+# count = 0 
+# chances = 3
 
-while count < chances:
-    guess = int(input("Guess the number : "))
-    count +=1
-    if guess == sn:
-        print("Congratulations! You guessed the correct number")
-        break
-    else:
-        print("Sorry! Try again")
+# while count < chances:
+#     guess = int(input("Guess the number : "))
+#     count +=1
+#     if guess == sn:
+#         print("Congratulations! You guessed the correct number")
+#         break
+#     else:
+#         print("Sorry! Try again")
+
+# price = [10, 20, 30]
+# total = 0 
+# for i in price :
+#     total += i
+# print(f"Total : {total}")
+    
+# Largest Number 
+num = [10, 20, 30, 40, 50]
+max = num[0]
+for number in num:
+    if number > max:
+        max = number
+print(f"Largest number is {max}")   
+
+# Find the duplicate values in List
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3]
+uniq = []
+
+for number in numbers :
+    if number not in uniq :
+        uniq.append(number)
+print(uniq)
