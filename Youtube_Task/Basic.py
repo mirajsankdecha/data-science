@@ -83,3 +83,20 @@ for number in numbers :
     if number not in uniq :
         uniq.append(number)
 print(uniq)
+
+
+# Phone Number Transalation
+
+dic = {
+    "1" : "One",
+    "2" : "Two",
+    "3" : "Three",
+    "4" : "Four",
+    "5" : "Five"
+}
+
+num = input("Enter your number : ")
+output = ""
+for i in num :
+    output += dic.get(i,"!") + " "
+print(f"{output}")
