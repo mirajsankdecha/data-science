@@ -135,4 +135,9 @@
 # sqr = square(5)
 # print(f"Sqaure is : {sqr}")
 
-
+# Try and Exception 
+try :
+    age = int(input("Enter your Age > "))
+    print(age)
+except ValueError  :
+    print("Invalid Value")
