@@ -66,37 +66,73 @@
 #     total += i
 # print(f"Total : {total}")
     
-# Largest Number 
-num = [10, 20, 30, 40, 50]
-max = num[0]
-for number in num:
-    if number > max:
-        max = number
-print(f"Largest number is {max}")   
+# # Largest Number 
+# num = [10, 20, 30, 40, 50]
+# max = num[0]
+# for number in num:
+#     if number > max:
+#         max = number
+# print(f"Largest number is {max}")   
 
-# Find the duplicate values in List
+# # Find the duplicate values in List
 
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3]
-uniq = []
+# numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 2, 3]
+# uniq = []
 
-for number in numbers :
-    if number not in uniq :
-        uniq.append(number)
-print(uniq)
+# for number in numbers :
+#     if number not in uniq :
+#         uniq.append(number)
+# print(uniq)
 
 
-# Phone Number Transalation
+# # Phone Number Transalation
 
-dic = {
-    "1" : "One",
-    "2" : "Two",
-    "3" : "Three",
-    "4" : "Four",
-    "5" : "Five"
-}
+# dic = {
+#     "1" : "One",
+#     "2" : "Two",
+#     "3" : "Three",
+#     "4" : "Four",
+#     "5" : "Five"
+# }
 
-num = input("Enter your number : ")
-output = ""
-for i in num :
-    output += dic.get(i,"!") + " "
-print(f"{output}")
+# num = input("Enter your number : ")
+# output = ""
+# for i in num :
+#     output += dic.get(i,"!") + " "
+# print(f"{output}")
+
+# # Emoji Converter 
+# msg = input(">")
+# words = msg.split(" ")
+# emojis = {
+#     ":)" : "😊",
+#     ":(" : "😢",
+#     "(::)" : "😂"
+# }
+# output = ""
+# for word in words :
+#     output += emojis.get(word,word) + " "
+# print(output)
+
+# # Functions
+# def greet_user():
+#     print("Hii there!, Miraj Sankdecha Here")
+    
+# greet_user() 
+
+# # Functions with Parameters
+
+# def greet_user(first_name,second_name):
+#     print(f"Hii {first_name} {second_name}!")
+
+# greet_user("Miraj,Sankdecha")
+# greet_user(first_name="Miraj",second_name="Sankdecha")
+
+# # Function with return 
+
+# def square(number) :
+#     return number*number
+# sqr = square(5)
+# print(f"Sqaure is : {sqr}")
+
+
