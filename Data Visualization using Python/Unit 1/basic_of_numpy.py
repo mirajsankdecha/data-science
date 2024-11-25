@@ -54,3 +54,24 @@ print("-"*20)
 array15 = np.floor(np.random.rand(2,2,2) * 10)
 print(array15)
 
+array16 = np.array([2,4,9])
+print(array16.dtype) # Gives Data type of particular object
+
+int_array = np.array([-3,-1,0,1])
+float_array = np.array([0.1,0.2,0.3])
+complex_array = np.array([1+2j,2+3j,3+4j])
+print(int_array.dtype)
+print(float_array.dtype)
+print(complex_array.dtype)
+
+array17 = np.array([1,3,7], dtype='int32')
+print(array1,array1.dtype)
+
+int_array1 = np.array([1,2,3], dtype='int8')
+int_array2 = np.array([5,6,7], dtype='int16')
+float_array = np.array([0.1,0.2,0.3], dtype='float32')
+complex_array = np.array([1+2j,2+3j,3+4j], dtype='complex64')
+print(int_array1.dtype)
+print(int_array2.dtype)
+print(float_array.dtype)
+print(complex_array.dtype)
