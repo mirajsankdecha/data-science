@@ -101,3 +101,23 @@ print(array20.shape)
 array19= np.array([[[1,2,3],[4,5,6]],[[7,8,9],[10,11,12]]])
 print(array19.ndim)
 print(array19.shape)
+
+array21 = np.array([[1,2,3,4],[5,6,7,8]])
+np.save('file1.npy',array21)
+loaded_array = np.load('file1.npy')
+print(loaded_array)
+np.savetxt('file2.txt',array21)
+loaded_array = np.loadtxt('file2.txt')
+print(loaded_array)
+
+array22 = np.array([[1,2,3],[4,5,6]])
+print(array22)
+print(array22[0][1])
+print(array22[-1][-2])
+# Resign at the given index
+array22[0][1] = 5
+print(f"After the modify the array : {array22}")
+sec_row = array22[1,:]
+print("Second Row :",sec_row)
+third_col = array22[:,2]
+print("Third Column :", third_col)
