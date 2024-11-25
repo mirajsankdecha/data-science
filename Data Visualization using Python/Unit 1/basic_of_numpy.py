@@ -75,3 +75,29 @@ print(int_array1.dtype)
 print(int_array2.dtype)
 print(float_array.dtype)
 print(complex_array.dtype)
+
+
+int_array = np.array([1,3,5,7])
+# convert data type of int_array to float
+float_array = int_array.astype('float64')
+# print the arrays and their data types
+print(int_array, int_array.dtype)
+print(float_array, float_array.dtype)
+
+
+array18 = np.arange(1,10)
+print("Check The Data Types ",array18.ndim)
+print(array18)
+print("Size of Array",array18.size)
+print("Shape of Array",array18.shape)
+array18 = array18.reshape(3,3)
+print("Reshaped Array:\n",array18)
+print("Item Size",array18.itemsize)
+print("Current Array",array18.shape)
+print("Memory Location",array18.data)
+array20 = np.array([[1,2,3],[2,3,4]])
+print(array20.ndim)
+print(array20.shape)
+array19= np.array([[[1,2,3],[4,5,6]],[[7,8,9],[10,11,12]]])
+print(array19.ndim)
+print(array19.shape)
