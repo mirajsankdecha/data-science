@@ -110,20 +110,20 @@ import numpy as np
 # loaded_array = np.loadtxt('file2.txt')
 # print(loaded_array)
 
-# array22 = np.array([[1,2,3],[4,5,6]])
-# print(array22)
-# print(array22[0][1])
-# print(array22[-1][-2])
-# # Resign at the given index
-# array22[0][1] = 5
-# print(f"After the modify the array : {array22}")
-# sec_row = array22[1,:]
-# print("Second Row :",sec_row)
-# third_col = array22[:,2]
-# print("Third Column :", third_col)
+array22 = np.array([[1,2,3],[4,5,6]])
+print(array22)
+print(array22[0][1])
+print(array22[-1][-2])
+# Resign at the given index
+array22[0][1] = 5
+print(f"After the modify the array : {array22}")
+sec_row = array22[1,:]
+print("Second Row :",sec_row)
+third_col = array22[:,2]
+print("Third Column :", third_col)
 
-# # Creating a 3D Array with Shape
-# threed_array = np.array([[[1,2,3],[4,5,6],[7,8,9],[10,11,12]],[[13,14,15],[16,17,18],[19,20,21],[22,23,24]]])
-# print(threed_array)
-# element = threed_array[1,2,1]
-# print(f"Element at Index (1,2,1) : {element}")
+# Creating a 3D Array with Shape
+threed_array = np.array([[[1,2,3],[4,5,6],[7,8,9],[10,11,12]],[[13,14,15],[16,17,18],[19,20,21],[22,23,24]]])
+print(threed_array)
+element = threed_array[1,2,1]
+print(f"Element at Index (1,2,1) : {element}")
