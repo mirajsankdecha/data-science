@@ -30,4 +30,6 @@ print(f"The Vectorization of array is : {result}")
 array_vec = two_d_array1 + two_d_array2
 print(f"Vectorization of 2D array is : {array_vec}")
 
+# Masking of Array 
+
 
