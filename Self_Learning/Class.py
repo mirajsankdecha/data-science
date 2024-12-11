@@ -36,3 +36,18 @@ cal.mul()
 cal.div()
 cal.mod()
 
+# Inheritance of Class
+
+class mammal :
+    def walk(self):
+        print("Walking.....")
+class Dog(mammal) :
+    pass
+class Cat() :
+    def cat(self) :
+        print("Meowwwwwwww")
+
+dog1 = Dog()
+dog1.walk()
+cat1 = Cat()
+cat1.cat()
