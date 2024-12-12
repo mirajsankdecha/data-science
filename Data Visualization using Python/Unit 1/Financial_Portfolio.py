@@ -29,3 +29,7 @@ print(f"Daily Return of 1st company is :\n {daily_returns_company1}")
 #Task 7 : Find the sum of all stock price
 sum_price = stock_price.sum()
 print(f"Sum of Price of Compnies is : {sum_price}")
+
+#Task 8 : Calculate the mean of stock price for each company
+mean_each_company = stock_price.mean(axis=1)
+print(f"Mean of stock price of each company is :\n {mean_each_company}")
