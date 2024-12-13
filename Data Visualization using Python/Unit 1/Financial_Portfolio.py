@@ -68,3 +68,8 @@ print(f"Random Portfolio weights : {weights}")
 max_price_indices = stock_price.argmax(axis=1)
 print(f"Indices of the highest price for each company : {max_price_indices}")
 
+#Task 17 : Split the stock price array into 2 arrays (3 and 2 company)
+array1, array2 = stock_price[:3], stock_price[3:]
+print(f"Array 1 :\n {array1}")
+print(f"Array 2 :\n {array2}")
+
