@@ -33,3 +33,38 @@ print(f"Sum of Price of Compnies is : {sum_price}")
 #Task 8 : Calculate the mean of stock price for each company
 mean_each_company = stock_price.mean(axis=1)
 print(f"Mean of stock price of each company is :\n {mean_each_company}")
+
+#Task 9 : Finding the standard deviation of stock prices for each company
+std_per_day = stock_price.std(axis=0)
+print(f"Standard Deviation of stock price for each day is :\n {std_per_day}")
+
+#Task 10 : Finding the minimum and maximum price for each company
+min_price = stock_price.min(axis=1)
+max_price = stock_price.max(axis=1)
+print(f"Minimum price for each company : {min_price}")
+print(f"Maximum price of each company is : {max_price}")
+
+#Task 11 : Add a 1D array of transaction costs
+transaction_costs = np.array([5,5,5,5,5,5,5])
+adjusted_price = stock_price + transaction_costs
+print(f"Stock prices after adding transaction costs : \n{adjusted_price}")
+
+#Task 12 : 
+
+# Task 13 : finding the co-variance matrix of stock price
+cov_var = np.cov(stock_price)
+print(f"Co-Variance Matrix is :\n {cov_var}")
+
+#Task 14 : Sort the data of stock prices for the 4th company
+sorted_price = np.sort(stock_price[3])
+print(f"Sorted stock price for the 4th company :\n {sorted_price}")
+
+#Task 15 : Generate random weight for a portfolio of 5 stock that sum to 1
+weights = np.random.random(5)
+weights /= weights.sum()
+print(f"Random Portfolio weights : {weights}")
+
+#Task 16 : Find the index of the highest price for each company
+max_price_indices = stock_price.argmax(axis=1)
+print(f"Indices of the highest price for each company : {max_price_indices}")
+
