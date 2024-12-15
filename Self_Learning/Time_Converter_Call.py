@@ -1,9 +1,9 @@
-from TimeConverter import TimeConverter
+from Time_Converter import TimeConverter
 
 def main() : 
     print("Welcome to the time program")
     value = float(input("Enter the value to convert > "))
-    converter = Time_Converter(value)
+    converter = TimeConverter(value)
     
     print("\nChoose the options : ")
     print("1. Seconds to Minutes")
