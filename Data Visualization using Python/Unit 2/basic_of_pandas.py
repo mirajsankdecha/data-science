@@ -17,3 +17,4 @@ print(f"Data of first 200 rows : {kc.head(200)}") #Print the first 200 rows
 print(f"{kc.tail()}")
 print(f"{kc.tail(-1)}") # print negative indexing in the dataset
 print(kc.info) # Print all the inforamtion of dataset
+print(kc.dtypes) # Print the datatype of all the columns
