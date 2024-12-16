@@ -12,4 +12,8 @@ print(type(kc)) # Print the type of dataframe
 print(kc.columns) # Print all the columns
 print(f"Total Rows in dataset : {len(kc)}")
 print(kc.shape)
-print(kc.size)
+print(f"size of dataset is : {kc.size}") # Print the size of dataset
+print(f"Data of first 200 rows : {kc.head(200)}") #Print the first 200 rows
+print(f"{kc.tail()}")
+print(f"{kc.tail(-1)}") # print negative indexing in the dataset
+print(kc.info) # Print all the inforamtion of dataset
