@@ -22,3 +22,7 @@ print(df_with_range_index)
 df_with_range_index.rename(index={5: 'A', 6: 'B', 7: 'C', 8: 'D'}, inplace=True)  # Correct keys
 print("\nModified DataFrame after renaming index:")
 print(df_with_range_index)
+
+# Reset the index of the DataFrame with 
+df.reset_index()
+print(f"Modified DataFrame is : {df}")
