@@ -10,3 +10,7 @@ print(len(titanic)) #Print all the rows of dataset
 print(titanic.shape) #Print the shape of dataset
 print(titanic.info) #Print the inforamtion of dataset
 print(titanic.dtypes) #Print all the columns datatype in dataset
+print(f"Minimum Value is :\n {titanic.min()}")
+print(f"Maximum Value is :\n {titanic.max()}")
+print(f"Sum Value is :\n {titanic.sum()}")
+print(f"Filter the numeric value is :\n {titanic.sum(numeric_only=True)}")
