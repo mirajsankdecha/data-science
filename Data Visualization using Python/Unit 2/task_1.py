@@ -20,5 +20,6 @@ print(f"Maximum Value is:\n{titanic.max()}")
 print(f"Sum Value is:\n{titanic.sum()}")
 print(f"Filter the numeric value is:\n{titanic.sum(numeric_only=True)}")
 
-# Fetch and print the "Name" column
-print(f"Names:\n{titanic['Name']}")
+# Fetch and print the particluar column
+print(f"Names :\n{titanic['name']}")
+print(f"Age :\n{titanic['age']} ")
