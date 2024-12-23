@@ -1,16 +1,24 @@
 import pandas as pd
 
+# Load the Titanic dataset
 titanic = pd.read_csv("E:/python/Data Visualization using Python/Unit 2/titanic.csv")
-print(titanic) #Print the first and last rows  of dataset
-print(titanic.head) #Print the first 5 rows of dataset
-print(titanic.tail) #Print the last 5 rows of dataset
-print(type(titanic)) #Print the type of dataset
-print(titanic.columns) #Print all the columns of dataset
-print(len(titanic)) #Print all the rows of dataset
-print(titanic.shape) #Print the shape of dataset
-print(titanic.info) #Print the inforamtion of dataset
-print(titanic.dtypes) #Print all the columns datatype in dataset
-print(f"Minimum Value is :\n {titanic.min()}")
-print(f"Maximum Value is :\n {titanic.max()}")
-print(f"Sum Value is :\n {titanic.sum()}")
-print(f"Filter the numeric value is :\n {titanic.sum(numeric_only=True)}")
+
+# Print the first and last rows of the dataset
+print(titanic)  
+print(titanic.head())  # Print the first 5 rows of the dataset
+print(titanic.tail())  # Print the last 5 rows of the dataset
+print(type(titanic))  # Print the type of the dataset
+print(titanic.columns)  # Print all the columns of the dataset
+print(len(titanic))  # Print the number of rows in the dataset
+print(titanic.shape)  # Print the shape of the dataset
+print(titanic.info())  # Print information about the dataset
+print(titanic.dtypes)  # Print the datatypes of all columns in the dataset
+
+# Perform calculations on the dataset
+print(f"Minimum Value is:\n{titanic.min()}")
+print(f"Maximum Value is:\n{titanic.max()}")
+print(f"Sum Value is:\n{titanic.sum()}")
+print(f"Filter the numeric value is:\n{titanic.sum(numeric_only=True)}")
+
+# Fetch and print the "Name" column
+print(f"Names:\n{titanic['Name']}")

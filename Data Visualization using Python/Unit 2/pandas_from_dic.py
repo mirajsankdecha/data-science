@@ -26,3 +26,5 @@ print(df_with_range_index)
 # Reset the index of the DataFrame with 
 df.reset_index()
 print(f"Modified DataFrame is : {df}")
+
+# Append the data to the DataFrame
