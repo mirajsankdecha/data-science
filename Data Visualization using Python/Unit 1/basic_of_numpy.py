@@ -76,7 +76,6 @@ print(int_array2.dtype)
 print(float_array.dtype)
 print(complex_array.dtype)
 
-
 int_array = np.array([1,3,5,7])
 # convert data type of int_array to float
 float_array = int_array.astype('float64')
