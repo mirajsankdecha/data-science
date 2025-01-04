@@ -118,7 +118,7 @@ y2 = np.array([10, 20, 30, 40])
 # plt.grid(True)
 # plt.show()
 
-# Task 9: Pie Chart with Three Subtasks
+# Task 9: Pie Chart with Three Subtasks, Shadow, and Colors
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -126,23 +126,28 @@ import numpy as np
 fruits = np.array([35, 25, 25, 15])
 labels = ["Apple", "Banana", "Orange", "Mango"]
 
-# Subtask 1: Basic Pie Chart
+# Custom colors
+colors = ['#ff9999', '#66b3ff', '#99ff99', '#ffcc99']  # Pink, Blue, Green, Orange
+
+# # Subtask 1: Basic Pie Chart with Shadow and Custom Colors
 # plt.figure()
-# plt.pie(fruits, labels=labels, startangle=90, autopct='%1.1f%%')
-# plt.title("Subtask 1: Basic Pie Chart")
+# plt.pie(fruits, labels=labels, startangle=90, autopct='%1.1f%%', shadow=True, colors=colors)
+# plt.title("Subtask 1: Basic Pie Chart with Shadow")
 # plt.show()
 
-# # Subtask 2: Pie Chart with Exploded Slice
+# # Subtask 2: Pie Chart with Exploded Slice, Shadow, and Custom Colors
 # explode = [0.2, 0, 0, 0]  # Explode the first slice (Apple)
 # plt.figure()
-# plt.pie(fruits, labels=labels, startangle=90, explode=explode, autopct='%1.1f%%')
-# plt.title("Subtask 2: Exploded Slice")
+# plt.pie(fruits, labels=labels, startangle=90, explode=explode, autopct='%1.1f%%', shadow=True, colors=colors)
+# plt.title("Subtask 2: Exploded Slice with Shadow")
 # plt.show()
 
-# Subtask 3: Pie Chart with Exploded Slices
+# Subtask 3: Pie Chart with Exploded Slices, Shadow, and Custom Colors
 explode = [0.1, 0.1, 0.1, 0.1]  # Explode all slices slightly
 plt.figure()
-plt.pie(fruits, labels=labels, startangle=180, explode=explode, shadow = True)
-plt.title("Subtask 3: Exploded All Slices")
+plt.pie(fruits, labels=labels, startangle=180, explode=explode, autopct='%1.1f%%', shadow=True, colors=colors)
+plt.title("Subtask 3: Exploded All Slices with Shadow and Legend")
+plt.legend()
 plt.show()
 
+# Subtask 4 : 
