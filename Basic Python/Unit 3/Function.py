@@ -1,21 +1,21 @@
-# def function_name() :
-#     print("Hello from function")
+def function_name() :
+    print("Hello from function")
 
-# function_name()
+function_name()
 
-# def function_name(name) :
-#     print("Hello from function",name)
+def function_name(name) :
+    print("Hello from function",name)
     
-# print("Enter your name : ")
-# name = input()
-# function_name(name)
+print("Enter your name : ")
+name = input()
+function_name(name)
 
-# def function_name(name) :
-#     return name
+def function_name(name) :
+    return name
 
-# print("Enter your name : ")
-# name = input()
-# print(function_name(name))
+print("Enter your name : ")
+name = input()
+print(function_name(name))
 
 # Concatenation of two strings using function
 
