@@ -15,15 +15,29 @@
 # print(list2)
 
 # Task 3 : Create and Store the name and age of 5 students in dictionary and find a student exits or not
-students = {}
-for i in range(5):
-    name = input("Enter the name of student: ")
-    age = int(input("Enter the age of student: "))
-    students[name] = age
-print(students)
-name = input("Enter the name of student to check: ")
-if name in students:
-    print("The student exits")
-else:
-    print("The student does not exits")
+# students = {}
+# for i in range(5):
+#     name = input("Enter the name of student: ")
+#     age = int(input("Enter the age of student: "))
+#     students[name] = age
+# print(students)
+# name = input("Enter the name of student to check: ")
+# if name in students:
+#     print("The student exits")
+# else:
+#     print("The student does not exits")
 
+# # Task 4 : Find the Common Number in two list
+# list1 = [1,2,3,4,5]
+# list2 = [5,6,7,8,9]
+# common = []
+# for i in list1:
+#     if i in list2:
+#         common.append(i)
+# print(common)
+
+# Task 5 : Right half pyramid pattern
+for i in range(1,6,1):
+    for j in range(i,6,1):
+        print("*",end="")
+    print()
