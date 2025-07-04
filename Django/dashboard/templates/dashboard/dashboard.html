@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Currently - Advanced Analytics Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .filter-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .filter-container select {
+            padding: 5px 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .dashboard-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .chart-container, .kpi-container {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .kpi-value {
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        canvas {
+            width: 100% !important;
+        }
+    </style>
+</head>
+<body>
+    <h2>Currently - Advanced Analytics Dashboard</h2>
+
+    <div class="filter-container">
+        <select>
+            <option>Gender: All</option>
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+        <select>
+            <option>Age: All</option>
+            <option>18-24</option>
+            <option>25-34</option>
+        </select>
+        <select>
+            <option>Platform: All</option>
+            <option>iOS</option>
+            <option>Android</option>
+        </select>
+        <select>
+            <option>Date: All</option>
+            <option>Last 7 Days</option>
+            <option>Last 30 Days</option>
+        </select>
+    </div>
+
+    <div class="dashboard-container">
+
+        <div class="kpi-container">
+            <div class="kpi-title">Total Users</div>
+            <div class="kpi-value">3384</div>
+        </div>
+
+        <div class="kpi-container">
+            <div class="kpi-title">Active Users</div>
+            <div class="kpi-value">1714</div>
+        </div>
+
+        <div class="kpi-container">
+            <div class="kpi-title">Avg Session Time</div>
+            <div class="kpi-value">60.6 sec</div>
+        </div>
+
+        <div class="kpi-container">
+            <div class="kpi-title">Avg Longest Streak</div>
+            <div class="kpi-value">49 days</div>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="lineChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="barChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="donutChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="horizontalBarChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="polarAreaChart"></canvas>
+        </div>
+
+    </div>
+
+    <script>
+        const labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'];
+        const data1 = [120, 190, 170, 220, 230, 200];
+        const data2 = [30000, 45000, 38000, 55000, 52000, 47000];
+
+        new Chart(document.getElementById('lineChart'), {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'User Growth',
+                    data: data1,
+                    borderColor: '#4e73df',
+                    backgroundColor: 'rgba(78,115,223,0.1)',
+                    fill: true,
+                    tension: 0.3
+                }]
+            }
+        });
+
+        new Chart(document.getElementById('barChart'), {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Revenue',
+                    data: data2,
+                    backgroundColor: '#1cc88a'
+                }]
+            }
+        });
+
+        new Chart(document.getElementById('donutChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Active', 'Inactive'],
+                datasets: [{
+                    data: [1714, 1670],
+                    backgroundColor: ['#36b9cc', '#f6c23e']
+                }]
+            }
+        });
+
+        new Chart(document.getElementById('horizontalBarChart'), {
+            type: 'bar',
+            data: {
+                labels: ['iOS', 'Android'],
+                datasets: [{
+                    label: 'Session Time (sec)',
+                    data: [29000, 75000],
+                    backgroundColor: '#858796'
+                }]
+            },
+            options: { indexAxis: 'y' }
+        });
+
+        new Chart(document.getElementById('polarAreaChart'), {
+            type: 'polarArea',
+            data: {
+                labels: ['Photos', 'Videos', 'Stories', 'Moments', 'Coins'],
+                datasets: [{
+                    data: [20, 15, 25, 10, 30],
+                    backgroundColor: ['#e74a3b','#858796','#f6c23e','#36b9cc','#1cc88a']
+                }]
+            }
+        });
+    </script>
+</body>
+</html>
